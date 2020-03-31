@@ -1,4 +1,4 @@
-##Main Window of the GUI
+#Main Window of the GUI
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Widget import*
