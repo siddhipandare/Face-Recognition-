@@ -73,6 +73,12 @@ Python\Python38\Lib\site-packages\cv2\data
 
 * Click on ```Access``` and see the recognised face label.
 
+* In ```reference files``` folder, you can find individual python codes for ```data```,```train```,```recognition``` and User Interface codes in ```.ui``` files for **Main Window** and **Widget** windows. You can use the following command to convert ```.ui``` to ```.py``` file:
+
+```
+pyuic5 -x MainWindow.ui -o MainWindow.py
+```
+
 ## Authors
 
 * [**Siddhi Pandare**](https://github.com/siddhipandare)
