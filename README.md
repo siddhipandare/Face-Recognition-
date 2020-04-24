@@ -24,7 +24,7 @@ A face recognition system which allows user to input their data (images and name
 
 ## Installing
 
-Use the package manager pip to install packages\
+Use the package manager pip to install packages
 
 Example:
 ```
