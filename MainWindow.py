@@ -1,3 +1,4 @@
+
 #Main Window of the GUI
 
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -19,7 +20,7 @@ class Ui_MainWindow(object):
         self.window.show()
 
     def recognition(self):
-        encoding = r"C:\Users\SIDDHI\Desktop\python\PP project\siddhi\encodings\encoding1.pickle"
+        encoding = "Insert the path of the encodings folder here with the addition \\encoding1.pickle " # example : "C:\\Users\XYZ\\SIDDHI\\Desktop\\encodings\\encoding1.pickle"
         data = pickle.loads(open(encoding, "rb").read())
         print(data)
         cap = cv2.VideoCapture(0)
@@ -145,3 +146,5 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+
+
