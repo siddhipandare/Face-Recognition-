@@ -1,7 +1,7 @@
-#Wiget for GUI
+#Widget for GUI
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from MainWin import*
+from MainWindow import*
 import sys 
 import numpy as np
 import os
@@ -11,11 +11,12 @@ import face_recognition
 import pickle
 
 class Ui_Form(object):
+
     def dataset(self):
-        face_cascade = cv2.CascadeClassifier('C:\\Users\\SIDDHI\\Desktop\\python\\PP project\\cascades\\data\\haarcascade_frontalface_default.xml')
+        face_cascade = cv2.CascadeClassifier("Insert the path of the data folder from cv2") #example: "C:\\Users\\SIDDHI\\Desktop\\desktop\\python\\PP project\\cascades\\data\\haarcascade_frontalface_default.xml"
 
         cap = cv2.VideoCapture(0+cv2.CAP_DSHOW)
-        path = "C:\\Users\\SIDDHI\\Desktop\\python\\PP project\\siddhi\\dataset\\"# path were u want store the data set
+        path = "Insert the path of the dataset folder" # example: "C:\\Users\\SIDDHI\\Desktop\\desktop\\python\\PP project\\siddhi\\dataset\\ "
         id =self.id_enter.text()
         try:
             # Create target Directory
@@ -57,8 +58,8 @@ class Ui_Form(object):
 
 
     def train(self):
-        dataset = "C:\\Users\\SIDDHI\\Desktop\\python\\PP project\\siddhi\\dataset\\"# path of the data set 
-        module = r"C:\Users\SIDDHI\Desktop\python\PP project\siddhi\encodings\encoding1.pickle" # were u want to store the pickle file 
+        dataset = "Insert the path of the dataset folder" # example: "C:\\Users\\SIDDHI\\Desktop\\desktop\\python\\PP project\\siddhi\\dataset\\ " 
+        module =  "Insert the path of the encodings folder here with the addition \\encoding1.pickle " # example : "C:\\Users\XYZ\\SIDDHI\\Desktop\\encodings\\encoding1.pickle"
 
         imagepaths = list(paths.list_images(dataset))
         knownEncodings = []
