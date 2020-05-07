@@ -33,10 +33,11 @@ pip install imutils
 ```
 
 ## Procedure
-* Clone this repository git clone
+
+* Clone this repository using the command:
 
 ```
-git@github.com:/siddhipandare/Face-Recognition-.git
+git clone https://github.com/siddhipandare/Face-Recognition-
 
 ```
 *  Copy the ```data``` folder from cv2 into a folder.
