@@ -17,6 +17,8 @@ A face recognition system which allows user to input their data (images and name
 
 * pickle <br />
 
+* PyQt5 tools <br />
+
 * dlib <br />
     Tip: Installing dlib can be a tedious job. On macOS or Linux you may follow [this link](https://gist.github.com/ageitgey/629d75c1baac34dfa5ca2a1928a7aeaf "dlib install")
 
