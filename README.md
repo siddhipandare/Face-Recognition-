@@ -1,6 +1,6 @@
 # Face Recognition
 
-A face recognition system which allows user to input their data (images and name). The system can thus detect and recognize their face. This project uses OpenCV for face detection and collects a data set of ~41 pictures of a person. It is trained using pickle module. Finally a face is recognized using face_recognition package in python. This package provides more accuracy than using haarcascades for recognition. The user friendly GUI is made with PyQt5 tools.
+A face recognition system which allows user to input their data (images and name). The system can thus detect and recognize their face. This project uses OpenCV for face detection and collects a data set of 40 pictures of a person. For every known person a corresponding face encoding is calculated. Finally a face is recognized using face_recognition package's compare_faces which compares the face area with the known encodings. This package provides more accuracy than using haarcascades for recognition. The user friendly GUI is made with PyQt5 tools.
 
 
 ## Dependencies
